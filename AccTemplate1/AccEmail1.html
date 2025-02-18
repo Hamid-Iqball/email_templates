@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Email Template</title>
+  <style>
+    /* General Reset */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+    background-color: #f9f9f9;
+  }
+
+  .email-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+ /* Header Section */
+.email-header {
+  background: url("./screens/header1-01.png") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px; 
+  height: 200px; 
+
+  position: relative;
+}
+
+.email-header h1 {
+  margin: 0;
+  font-size: 32px; /* Slightly larger font for better visibility */
+}
+.logo-section{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.header-text{
+    color: #000;
+    position: absolute;
+    max-width: 40%;
+    top: 70px;
+    left: 18spx;
+    font-size: 12px;
+
+    text-align: start;
+}
+.header-text button{
+    padding: 5px;
+    background-color: rgb(87, 87, 248);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    /* Body Section */
+    .email-body {
+      padding: 20px;
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    .email-body h2 {
+      color: #333333;
+      margin-top: 0;
+    }
+
+    .email-body p {
+      margin: 0 0 16px;
+    }
+
+    .email-body a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #ffffff;
+      background-color: #4CAF50;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .email-body a:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer Section */
+    .email-footer {
+      background-color: #E5EFFB;
+      color: #777777;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 1px solid #dddddd;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .email-footer .social-icons a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 18px;
+    }
+
+    .email-footer .footer-link a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .email-footer .footer-link a:hover {
+      text-decoration: underline;
+    }
+
+    .sc-icon{
+        width: 24px;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+<div class="email-container">
+  <!-- Header -->
+  <div class="email-header">
+    <div class="logo-section">
+      <img src="./icons/accelerate-01.png" alt="acc-logo" class="logo">
+    </div>
+    <div class="header-text">
+      <h2>Task is Due!</h2>
+      <p>Your task is ready and waiting—seize the moment, complete it, and move one step closer to success.</p>
+      <button>SIGN IN</button>
+    </div>
+  </div>
+
+    <!-- Body -->
+  <div class="email-body">
+    <h2>Good Day</h2>
+    <p>
+      At Accelerate, we turn tasks into milestones and goals into achievements. Our platform is built to help you manage priorities, meet deadlines effortlessly, and surpass expectations.
+      Accelerate your journey today.
+    </p>
+  </div>
+
+  <!-- Footer -->
+<div class="email-footer" style="background-color: #E5EFFB; color: #777777; padding: 15px; font-size: 14px; border-top: 1px solid #dddddd;">
+  <table width="100%" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse; text-align: center;">
+    <tr>
+      <td style="width: 50%; text-align: left; vertical-align: middle;">
+        <!-- Social Icons -->
+        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+          <tr>
+            <td style="padding-right: 10px;"><a href="https://www.facebook.com/VeevoT/" target="_blank"><img src="./icons/fb-01.png" alt="" class="sc-icon" style="width: 24px;"></a></td>
+            <td style="padding-right: 10px;"><a href="https://twitter.com/VeevoTech" target="_blank"><img src="./icons/twitter-01.png" alt="" class="sc-icon" style="width: 24px;"></a></td>
+            <td style="padding-right: 10px;"><a href="https://www.linkedin.com/company/veevo-tech/" target="_blank"><img src="./icons/linedin-01.png" alt="" class="sc-icon" style="width: 24px;"></a></td>
+            <td style="padding-right: 10px;"><a href="[Insta Link]" target="_blank"><img src="./icons/insta-01.png" alt="" class="sc-icon" style="width: 24px;"></a></td>
+            <td style="padding-right: 10px;"><a href="https://www.youtube.com/channel/UC25rMAqZ6TJqN70BHPcHAcA" target="_blank"><img src="./icons/youtube-01.png" alt="" class="sc-icon" style="width: 24px;"></a></td>
+          </tr>
+        </table>
+      </td>
+      <td style="width: 3%; text-align: right; vertical-align: end;">
+        <!-- Footer Link -->
+        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+          <tr>
+            <td style="padding-right: 5px;"><img src="./icons/www-01.png" alt="" class="sc-icon" style="width: 24px;"></td>
+            <td><a href="https://veevotech.com/" target="_blank" style="color: #000; text-decoration: none; font-size: 14px;">WWW.VeevoTech.com</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+  </div>
+</body>
+</html>
