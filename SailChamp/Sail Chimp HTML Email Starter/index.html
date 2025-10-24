@@ -25,7 +25,7 @@
 		background-color: #e5dec7;
 		width: 100%;
 		table-layout: fixed; 
-		padding-bottom:60PX ;
+		padding-bottom:60px;
 	 }
 
 	 .main {
@@ -58,8 +58,13 @@
 	 
 
 	 h3{
-		font-family: "Roboto Condensed" , sans-serif;
-		font-size:28px ;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 28px;
+	 }
+	 
+	 h4{
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 22px;
 	 }
 
 	 .button{
@@ -70,6 +75,47 @@
 		border-radius: 5px;
 		font-weight: bold;
 
+	 }
+
+	 .three-columns{
+		font-size: 0;
+		padding: 35px 0 20px;
+	 }
+
+	 .three-columns .column{
+		width: 100%;
+		max-width: 200px;
+		display: inline-block;
+		vertical-align: top;
+	 }
+
+	 .three-columns .padding{
+		padding: 25px;
+	 }
+	 .three-columns .content{
+		font-size: 15px;
+		line-height: 20px;
+	 }
+	 
+
+	 .two-columns.last{
+		display: inline-block;
+		text-align: left;
+		text-align: center;
+	 }
+
+	 .two-columns .padding{
+		padding: 20px;
+	 }
+
+	 .two-columns .content{
+		font-size: 16px;
+		line-height: 20px;
+	 }
+	 
+	 .padding p{
+		font-size: 15px;
+		padding-bottom: 30px;
 	 }
 </style>
 </head>
@@ -94,10 +140,9 @@
 									<tr>
 										<td style="padding: 0 22px 10px;"> 
 											<a href="#">
-
-											<img src="./img/logo.png" alt="logo" title="SailChamp" width="250px">
-										</a>
-									</td>
+												<img src="./img/logo.png" alt="logo" title="SailChamp" width="250">
+											</a>
+										</td>
 									</tr>
 								</table>
 								<!-- social media table -->
@@ -119,28 +164,25 @@
 				</td>
 			</tr>
 <!-- BANNER IMAGE -->
-	<tr>
-		<td>
-			<a href="#"><img src="./img/banner.jpg" alt="banner" width="600" style="max-width: 100%;"></a>
-		</td>
-	</tr>
+			<tr>
+				<td>
+					<a href="#"><img src="./img/banner.jpg" alt="banner" width="600" style="max-width: 100%;"></a>
+				</td>
+			</tr>
 			
 <!-- TITLE, TEXT & BUTTON -->
 			<tr>
-				<td style = " padding:20px 15px  50px;">
+				<td style="padding: 20px 15px 50px;">
 					<table width="100%">
 						<tr>
-							<td style="padding: 10px 5px;"> <h3 >HTML Email TEMPLATE <span style="color: #c89800;">
-								Course
-							</span></h3>
-						<p style="line-height: 23px; font-size: 15px; padding: 0 0 22px;">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem aliquid ipsum ab adipisci architecto necessitatibus tenetur eum hic optio, eaque obcaecati iste? Reiciendis laborum optio vitae nihil eum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. .
-						</p>
-
-						<a href="" class="button">View Course</a>
-					    	</td>
-					</tr>
-
+							<td style="padding: 10px 5px;">
+								<h3>HTML Email TEMPLATE <span style="color: #c89800;">Course</span></h3>
+								<p style="line-height: 23px; font-size: 15px; padding: 0 0 22px;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem aliquid ipsum ab adipisci architecto necessitatibus tenetur eum hic optio, eaque obcaecati iste? Reiciendis laborum optio vitae nihil eum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</p>
+								<a href="" class="button">View Course</a>
+							</td>
+						</tr>
 					</table>
 				</td>
 			</tr>
@@ -156,21 +198,63 @@
 							<td class="three-columns">
 								<!-- 1 -->
 								<table class="column">
-									<tr><td>
-
-									</td></tr>
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href=""><img src="./img/design.png" alt="design img" width="150"></a>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Email Design</h4>
+														<p>Responsive HTML Email Template course to master email development</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
 								</table>
 								<!-- 2 -->
 								<table class="column">
-									<tr><td>
-
-									</td></tr>
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href=""><img src="./img/development.png" alt="development img" width="150"></a>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Email Development</h4>
+														<p>Responsive HTML Email Template course to master email development</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
 								</table>
 								<!-- 3 -->
 								<table class="column">
-									<tr><td>
-
-									</td></tr>
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href=""><img src="./img/marketing.png" alt="marketing img" width="150"></a>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Email Marketing</h4>
+														<p>Responsive HTML Email Template course to master email development</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
 								</table>
 							</td>
 						</tr>
@@ -178,11 +262,76 @@
 				</td>
 			</tr>
 <!-- BORDER -->
+ 			<tr>
+				<td height="2" style="background-color: black;"></td>
+			</tr>
 			
 <!-- TWO COLUMN SECTION -->
-			
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td class="two-columns last">
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href="#"><img src="./img/palette.png" alt="palette" width="260"></a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<h4>Create Custom Design</h4>
+														<p>Learn how to create beautiful, responsive email templates that work across all email clients. Master the art of email design with our comprehensive course.</p>
+														<span class="button">HTML Email Course</span>
+
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
 <!-- FOOTER SECTION -->
-			
+			<tr>
+				<td style="background-color:#2b2e33; color: #fff;">
+				<table width="100%">
+					<tr >
+						<td  style="padding: 45px 20px;">
+							<a href="#"><img src="./img/logo.png" alt="logo" width="260px"></a>
+							<p style="padding:5px ;">SailChap HTML Email Template</p>
+							<p>
+								123 Street Road, City, State 555555
+							</p>
+							
+												<a href="#"><img src="img/facebook.png" alt="" class="social"></a>
+												<a href="#"><img src="img/twitter.png" alt="" class="social"></a>
+												<a href="#"><img src="img/youtube.png" alt="" class="social"></a>
+												<a href="#"><img src="img/linkedin.png" alt="" class="social"></a>
+												<a href="#"><img src="img/instagram.png" alt="" class="social"></a>
+
+												
+											
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
 
 		</table> <!-- End Main Class -->
 
